@@ -129,6 +129,7 @@ a {
   border-radius: 6px;
   align-items: center;
   justify-content: flex-end;
+  object-fit: cover; /* tránh vỡ ảnh*/
 }
 .hero__img--large {
   width: 330px;
