@@ -13,6 +13,7 @@ body {
   font-family: "Sora", sans-serif;
 }
 /* ============== common ==================== */
+
 .container {
   width: 1170px;
   max-width: calc(100% - 48px);
@@ -50,6 +51,32 @@ a {
   line-height: 1.67; /* 166.667% */
 }
 /* ================== header =============== */
+.control {
+  display: flex;
+  column-gap: 18px;
+  align-items: center;
+  text-align: center;
+}
+.control__btn {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #575f66;
+  background-color: #fff;
+  cursor: pointer;
+  transition: 0.25s;
+}
+.control__btn:hover {
+  background-color: #2e80ce;
+  border-color: #2e80ce;
+  color: #fff;
+}
+.control__btn--next{
+  rotate: 180deg;/* xoay 180 độ nút next*/
+}
 .header {
   background: var(--header-color);
   min-height: 100vh;
@@ -293,13 +320,13 @@ a {
   height: 370px;
   border-radius: 6px;
   object-fit: cover;
-  display: flex; 
+  display: flex;
 }
-.about__img{
+.about__img {
   position: relative;
 }
 .about__img--small {
-  position:absolute;
+  position: absolute;
   top: 121px;
   left: 238px;
   border-radius: 6px;
@@ -307,6 +334,57 @@ a {
   height: 370px;
   object-fit: cover;
 }
-.about-content__btn{
+.about-content__btn {
   margin-top: 38px;
+}
+/* =================== team ================ */
+.team {
+  padding: 85px 0;
+}
+.team-header {
+  text-align: center;
+  margin: 0 auto;
+}
+.team__cta {
+  margin-top: 38px;
+}
+.team__list {
+  margin-top: 70px;
+  column-gap: 30px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.team-item__thumb {
+  height: 290px;
+  width: 100%;
+  object-fit: cover;
+  display: flex;
+  transition: all 0.5s;
+}
+.team-item__img-bg {
+  background: #eaf6ff;
+  padding-top: 28px;
+  border-radius: 6px;
+  overflow: hidden;
+}
+.team-item__name {
+  margin-top: 18px;
+  color: #10375c;
+  text-align: center;
+  font-size: 1.6rem;
+  line-height: 1.75; /* 175% */
+}
+.team-item__desc {
+  color: #575f66;
+  font-size: 1.4rem;
+  text-align: center;
+  font-weight: 300;
+  line-height: 1.86; /* 185.714% */
+}
+.team-item:hover .team-item__thumb {
+  transform: scale(1.1); /* enlarge to lên 1.1*/
+}
+.team__control {
+  margin-top: 38px;
+  justify-content: center;
 }
