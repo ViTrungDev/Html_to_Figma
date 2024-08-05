@@ -428,12 +428,22 @@ a {
   align-items: center;
 }
 /* ========================== code phần events ==================== */
+.events__left {
+  width: 54%;
+}
+
 .events__row {
+  padding: 85px 0px;
+  margin-bottom: 85px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
 .events__heading {
-  max-width: 470px;
+  width: 470px;
+}
+.events__right {
+  display: flex;
+  flex-shrink: 1;
 }
 .events__read {
   display: inline-block;
@@ -451,17 +461,18 @@ a {
   justify-content: start;
 }
 /* ================ events right ==================== */
-.events__list{
+.events__list {
+  flex-shrink: 1;
   display: flex;
   column-gap: 30px;
 }
 .events__row-right {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  column-gap: 30px;
+  margin-right: 0px;
 }
 .events__title {
- margin-bottom: 10px;
+  margin-bottom: 10px;
   width: 224px;
   color: #10375c;
   font-size: 1.6rem;
@@ -474,12 +485,47 @@ a {
   font-size: 1.4rem;
   font-weight: 300;
   line-height: 1.71; /* 171.429% */
-  
 }
-.events__container{
+.events__container {
   margin: 24px 0px 10px 22px;
 }
-.events__learn-more{
+.events__learn-more {
   display: inline-block;
   margin-top: 12px;
+}
+
+/*========================== code phần cta-action============*/
+.box__action {
+  background: #f6fbff;
+  padding: 85px 0 47px;
+}
+.action__title {
+  text-align: center;
+  font-size: 5rem;
+  font-weight: 600;
+  margin-left: 150px;
+}
+.action__title::after {
+  width: 136px;
+  height: 2px;
+  background: #2e80ce;
+  display: inline-block;
+  content: "";
+  position: relative;
+  bottom: -18px;
+  right: 480px;
+}
+.action__desc {
+  width: 617px;
+  text-align: center;
+  margin: 18px auto;
+  font-size: 1.6rem;
+  font-weight: 300;
+  line-height: 1.75; /* 175% */
+}
+.action__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 53px 0;
 }
