@@ -529,3 +529,122 @@ a {
   align-items: center;
   margin: 53px 0;
 }
+/* ================================ footer ============================= */
+.footer {
+  height: 553px;
+  background: #10375c;
+}
+.footer__list {
+  display: flex;
+}
+.footer-left {
+  width: 35.3%;
+}
+.footer__row {
+  padding: 100px 0 42px;
+}
+.footer__desc {
+  margin-top: 21px;
+  color: #a9b3bb;
+  font-family: "Open Sans";
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.75; /* 175% */
+  width: 336px;
+}
+/* footer right */
+.footer-right__list {
+  display: flex;
+  column-gap: 78px;
+}
+.footer-right__item:last-child {
+  width: 134px;
+}
+.footer-right__item:nth-last-child(1) {
+  flex-shrink: 1;
+  width: 273px;
+}
+.footer__title {
+  margin-bottom: 20px;
+  color: #fff;
+  font-family: "Open Sans";
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.75; /* 175% */
+}
+.footer-right__item ul li a {
+  display: inline-block;
+  color: #a9b3bb;
+  font-family: "Open Sans";
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.86; /* 185.714% */
+  margin-bottom: 10px;
+}
+
+.footer__last-child {
+  display: inline-block;
+  margin-bottom: 28px;
+}
+.image {
+  margin-right: 10px;
+  margin-bottom: 28px;
+}
+.label__desc {
+  color: #a9b3bb;
+  font-family: "Open Sans";
+  font-size: 1.4rem;
+  line-height: 1.86; /* 185.714% */
+  margin-bottom: 10px;
+}
+#mailto {
+  width: 212px;
+  height: 46px;
+  border-radius: 4px;
+  background-color: transparent;
+  border: 1px solid #95a7b8;
+  padding-left: 10px;
+  color: #fff;
+  border-color: #fff;
+}
+#mailto::placeholder {
+  padding-left: 10px;
+}
+.btn__submit {
+  border-radius: 4px;
+  background: #2e80ce;
+  text-align: center;
+  width: 108px;
+  height: 46px;
+  border: none;
+  color: #fff;
+
+  font-family: "Open Sans";
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 1.86; /* 185.714% */
+}
+.btn__submit:active {
+  transform: translateY(2px);
+}
+.address-email {
+  width: 331px;
+  display: flex;
+}
+.footer__row::after {
+  width: 1170px;
+  height: 1px;
+  background: #406181;
+  display: inline-block;
+  content: "";
+}
+.footer__copyright {
+  color: #aab3ba;
+  text-align: center;
+  font-family: "Open Sans";
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.86; /* 185.714% */
+}
