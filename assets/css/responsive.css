@@ -1,8 +1,14 @@
 /* 1.pc */
 @media (min-width: 992px) {
+  .mobile-header {
+    display: none;
+  }
 }
 /* 2.table and mobile */
 @media (max-width: 991.98px) {
+  .mobile-header {
+    display: block;
+  }
   .navbar__list {
     display: none;
   }
@@ -29,9 +35,9 @@
     visibility: hidden;
   }
   /* kiểm tra xem nếu checkbox đc check thì hiển thị overlay */
-  .menu-checkbox:checked ~ .menu-overlay{
+  .menu-checkbox:checked ~ .menu-overlay {
     opacity: 1;
-    visibility:visible;
+    visibility: visible;
   }
 }
 /* 3.table */
@@ -41,8 +47,8 @@
 @media (max-width: 767.98px) {
 }
 /* tạm ẩn những phần ko liên quan */
-.hero,
+/* .hero,
 main,
 .footer {
   display: none;
-}
+} */
